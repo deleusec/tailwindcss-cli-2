@@ -1,13 +1,116 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../dist/output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="flex justify-between min-h-header px-6 max-w-container mx-auto"
+    >
+      <div class="flex items-center">
+        <div class="flex flex-col items-center gap-[6px]">
+          <div class="w-6 h-[2px] bg-gray-300 rounded"></div>
+          <div class="w-6 h-[2px] bg-gray-300 rounded"></div>
+          <div class="w-6 h-[2px] bg-gray-300 rounded"></div>
+        </div>
+
+        <img src="/src/assets/logo.svg" alt="Logo Opendoor" />
+      </div>
+      <nav class="flex items-center">
+        <ul class="flex justify-center items-center gap-6">
+          <li>
+            <a href="#">Sell</a>
+          </li>
+          <li>
+            <a href="#">Buy</a>
+          </li>
+          <li>
+            <a href="#">Finance</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="text-primary font-bold flex items-center">
+        <button>Sign in</button>
+      </div>
+    </header>
+
+    <body class="min-h-body w-full max-w-container mx-auto">
+      <div class="w-full px-6">
+        <div
+          class="pt-12 md:px-24 md:pt-24 px-12 flex flex-col gap-6 w-full aspect-video min-h-[500px] max-h-[calc(100vh-200px)] bg-city-background bg-cover bg-top rounded-xl rounded-bl-[150px]"
+        >
+          <div class="flex flex-col max-w-[600px] w-full">
+            <h1 class="mb-6">
+              Sell your house in Los Angeles from the comfort of your couch
+            </h1>
+            <div class="p-2 mb-3 rounded-xl bg-white flex justify-between">
+              <input
+                type="text"
+                placeholder="Enter your home address"
+                class="w-full flex-1 px-3"
+              />
+              <button class="btn">Get my free offer</button>
+            </div>
+            <p>Focus on buying your next home, not selling your current one.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:px-36 md:py-16 py-6 px-6">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-x-[100px] gap-y-[50px]">
+          <div>
+            <img
+              src="/src/assets/house.svg"
+              alt="House SVG"
+              class="w-8 h-8 mb-3 object-contain"
+            />
+            <h3 class="mb-3">Competitive cash offer</h3>
+            <p>
+              Get a free offer in 24 hours with no risk of financing fall-trough
+            </p>
+          </div>
+          <div>
+            <img
+              src="/src/assets/house.svg"
+              alt="House SVG"
+              class="w-8 h-8 mb-3 object-contain"
+            />
+            <h3 class="mb-3">Competitive cash offer</h3>
+            <p>
+              Get a free offer in 24 hours with no risk of financing fall-trough
+            </p>
+          </div>
+          <div>
+            <img
+              src="/src/assets/house.svg"
+              alt="House SVG"
+              class="w-8 h-8 mb-3 object-contain"
+            />
+            <h3 class="mb-3">Competitive cash offer</h3>
+            <p>
+              Get a free offer in 24 hours with no risk of financing fall-trough
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:px-36 md:py-16 py-6 px-6">
+        <div class="w-full grid grid-cols-12">
+          <div class="col-span-8 col-start-5 ">
+            <h2>No showings, no stress. Get an instant offer, compare options and sell safely.</h2>
+          </div>
+        </div>
+      </div>
+    </body>
+
+    <footer></footer>
+  </body>
 </html>
